@@ -1,0 +1,22 @@
+<mat-card class="feed-item">
+  <mat-card-header class="feed-item-header">
+    <img
+      loading="lazy"
+      [src]="item.user.profile_image.small"
+      mat-card-avatar
+      class="feed-item-user-img"
+    />
+    <mat-card-title>{{ item.user.name }}</mat-card-title>
+    <mat-card-subtitle>{{ item.description || "Image" }}</mat-card-subtitle>
+  </mat-card-header>
+  <img
+    loading="lazy"
+    [src]="item.urls.regular"
+    mat-card-image
+    class="feed-item-img"
+  />
+  <mat-card-footer class="p2 feed-item-footer">
+    <p>{{ item.alt_description }}</p>
+    <a mat-button [href]="item.links.html" target="_blank">Check original</a>
+  </mat-card-footer>
+</mat-card>

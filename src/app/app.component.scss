@@ -1,0 +1,12 @@
+#root {
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-bar-spacer {
+  flex: 1 1 auto;
+}
